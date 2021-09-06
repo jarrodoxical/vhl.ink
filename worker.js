@@ -119,7 +119,7 @@ async function handleRequest(request, event) {
 			body: JSON.stringify({ 'path': path }),
 			headers: { 'Content-Type': 'application/json' },
 		};
-		ANALYTICS_URL ? event.waitUntil(fetch(ANALYTICS_URL, analyticsReq)) : null;
+		//ANALYTICS_URL ? event.waitUntil(fetch(ANALYTICS_URL, analyticsReq)) : null;
 
 		return Response.redirect(redirectURL, 302);
 	}
